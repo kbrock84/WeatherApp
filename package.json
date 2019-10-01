@@ -1,0 +1,45 @@
+{
+  "name": "weather",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-scripts": "3.1.2",
+    "styled-components": "^4.4.0"
+  },
+  "scripts": {
+    "start": "concurrently \"nodemon server/server.js\" \"react-scripts start\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test-server": "jest --watch --testPathPattern=/server/.*.test.js --config=server/jest.config.js",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:8080",
+  "devDependencies": {
+    "@testing-library/react": "^9.2.0",
+    "@testing-library/react-hooks": "^2.0.1",
+    "concurrently": "^4.1.2",
+    "jest-fetch-mock": "^2.1.2",
+    "nodemon": "^1.19.2",
+    "react-test-renderer": "^16.10.1",
+    "supertest": "^4.0.2"
+  }
+}
