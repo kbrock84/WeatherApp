@@ -97,7 +97,7 @@ const Geolocation = ({ updateLocation, children }) => {
         <input
           type="checkbox"
           data-testid="locate-toggle"
-          onClick={e => handleChange(e.target)}
+          onChange={e => handleChange(e.target)}
         />
         <span className={checkboxState.checked ? "svg-blue" : ""}>
           <GpsIcon />
